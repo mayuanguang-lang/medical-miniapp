@@ -1,0 +1,28 @@
+<!--pages/contact/contact.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="page-title">联系我们</text>
+    <text class="page-desc">如有任何问题或合作意向，欢迎联系</text>
+  </view>
+
+  <view class="contact-list">
+    <view class="contact-item" wx:for="{{contacts}}" wx:key="label">
+      <text class="contact-label">{{item.label}}</text>
+      <view class="contact-value-row">
+        <text class="contact-value">{{item.value}}</text>
+        <text class="copy-btn" data-text="{{item.value}}" bindtap="copyText">复制</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="qrcode-section">
+    <text class="qrcode-tip">{{qrCodeTip}}</text>
+    <view class="qrcode-placeholder">
+      <text class="placeholder-text">公众号二维码</text>
+    </view>
+  </view>
+
+  <view class="actions">
+    <button class="btn-back" bindtap="goBack">返回首页</button>
+  </view>
+</view>
