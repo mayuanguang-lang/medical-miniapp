@@ -1,0 +1,35 @@
+<!--pages/picloud/picloud.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="header-title">PiCloud</text>
+    <text class="header-sub">PiHub 学术云端工作空间</text>
+  </view>
+
+  <view class="feature-grid">
+    <view class="feature-card" wx:for="{{features}}" wx:key="title" bindtap="onFeatureTap">
+      <view class="feature-icon-wrap" style="background: {{item.color}}">
+        <text class="feature-icon">{{item.icon}}</text>
+      </view>
+      <text class="feature-title">{{item.title}}</text>
+      <text class="feature-desc">{{item.desc}}</text>
+    </view>
+  </view>
+
+  <view class="section-header"><text class="section-title">最近文档</text></view>
+
+  <view class="doc-list">
+    <view class="doc-item" wx:for="{{recentDocs}}" wx:key="title" bindtap="onDocTap">
+      <view class="doc-icon">{{item.type === '文档' ? '📄' : '📊'}}</view>
+      <view class="doc-body">
+        <text class="doc-name">{{item.title}}</text>
+        <text class="doc-time">{{item.time}}</text>
+      </view>
+      <text class="doc-arrow">›</text>
+    </view>
+  </view>
+
+  <view class="footer-note">
+    <text class="footer-text">更多功能即将上线</text>
+    <text class="footer-ver">PiCloud v1.0 · PiHub</text>
+  </view>
+</view>
