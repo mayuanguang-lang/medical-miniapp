@@ -1,0 +1,24 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">{{platformName}}</text>
+    <text class="description">{{description}}</text>
+  </view>
+
+  <view class="features">
+    <text class="section-title">主要功能</text>
+    <view class="feature-list">
+      <view class="feature-item" wx:for="{{features}}" wx:key="index">
+        <text class="feature-text">{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <text class="version">版本 {{version}}</text>
+  </view>
+
+  <view class="actions">
+    <button class="btn-back" bindtap="goBack">返回首页</button>
+  </view>
+</view>
