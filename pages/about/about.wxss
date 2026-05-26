@@ -1,0 +1,80 @@
+/* pages/about/about.wxss */
+.container {
+  padding: 40rpx;
+  background-color: #F3F4F6;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 60rpx 0 40rpx;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #1E40AF;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.description {
+  font-size: 28rpx;
+  color: #6B7280;
+  display: block;
+}
+
+.features {
+  margin-top: 40rpx;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 30rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #374151;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.feature-list {
+  padding-left: 10rpx;
+}
+
+.feature-item {
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid #E5E7EB;
+}
+
+.feature-item:last-child {
+  border-bottom: none;
+}
+
+.feature-text {
+  font-size: 28rpx;
+  color: #4B5563;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60rpx;
+}
+
+.version {
+  font-size: 24rpx;
+  color: #9CA3AF;
+}
+
+.actions {
+  margin-top: 40rpx;
+  padding: 0 20rpx;
+}
+
+.btn-back {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  border-radius: 12rpx;
+  font-size: 30rpx;
+}
