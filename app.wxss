@@ -1,0 +1,53 @@
+/* app.wxss - 全局样式 */
+page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 28rpx;
+  color: #1A1A1A;
+  background-color: #F5F7FA;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+view, text, image {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0;
+  min-height: 100vh;
+  background-color: #F5F7FA;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 32rpx 20rpx;
+}
+
+.section-title-bar {
+  width: 6rpx;
+  height: 32rpx;
+  background: linear-gradient(180deg, #2B7DE9, #1E3A5F);
+  border-radius: 3rpx;
+  margin-right: 16rpx;
+}
+
+.section-title-text {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+
+.section-more {
+  margin-left: auto;
+  font-size: 24rpx;
+  color: #8C9BAB;
+  display: flex;
+  align-items: center;
+}
+
+.section-more::after {
+  content: '›';
+  font-size: 32rpx;
+  margin-left: 4rpx;
+}
