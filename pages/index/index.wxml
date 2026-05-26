@@ -1,0 +1,85 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- 一体化顶部区域：品牌 + 搜索 -->
+  <view class="header-area">
+    <view class="header-brand-row">
+      <text class="brand-logo">PiHub</text>
+    </view>
+    <view class="search-bar" bindtap="onSearchTap">
+      <image class="search-icon" src="/images/icon-search.svg" mode="aspectFit"></image>
+      <text class="search-placeholder">查找课程</text>
+    </view>
+  </view>
+
+  <!-- 轮播Banner -->
+  <swiper class="banner-swiper" indicator-dots indicator-color="rgba(255,255,255,0.4)" indicator-active-color="#FFFFFF" autoplay circular>
+    <swiper-item wx:for="{{banners}}" wx:key="id" bindtap="onBannerTap">
+      <view class="banner-item">
+        <view class="banner-inner">
+          <text class="banner-tag">PiHub</text>
+          <text class="banner-title">{{item.title}}</text>
+          <text class="banner-sub">探索更多 →</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <!-- 分类导航 -->
+  <view class="category-section">
+    <scroll-view scroll-x class="category-scroll">
+      <view class="category-list">
+        <view class="category-item" wx:for="{{categories}}" wx:key="label" data-key="{{item.key}}" bindtap="onCategoryTap">
+          <view class="category-icon-wrap" style="background: {{item.color}}">
+            <image class="category-icon-img" src="{{item.icon}}" mode="aspectFit"></image>
+          </view>
+          <text class="category-label">{{item.label}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 公告活动 -->
+  <view class="section-block">
+    <view class="section-header">
+      <text class="section-title">公告与活动</text>
+      <text class="section-more">查看全部 ›</text>
+    </view>
+    <scroll-view scroll-x class="announce-scroll">
+      <view class="announce-card" wx:for="{{announcements}}" wx:key="id" bindtap="onAnnouncementTap">
+        <view class="announce-top">
+          <text class="announce-tag {{item.tagType}}">{{item.tag}}</text>
+          <text class="announce-date">{{item.date}}</text>
+        </view>
+        <text class="announce-title">{{item.title}}</text>
+        <view class="announce-action">
+          <text class="announce-btn">查看详情</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 精选直播回放 -->
+  <view class="section-block">
+    <view class="section-header">
+      <text class="section-title">精选直播回放</text>
+      <text class="section-more">更多 ›</text>
+    </view>
+    <view class="live-grid">
+      <view class="live-card" wx:for="{{liveRecords}}" wx:key="id" bindtap="onLiveRecordTap">
+        <view class="live-cover">
+          <view class="play-overlay">
+            <view class="play-circle">▶</view>
+          </view>
+          <view class="live-duration">{{item.duration}}</view>
+        </view>
+        <view class="live-info">
+          <text class="live-title">{{item.title}}</text>
+          <text class="live-speaker">{{item.speaker}} · {{item.views}}次观看</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部留白 -->
+  <view class="footer-space"></view>
+</view>
