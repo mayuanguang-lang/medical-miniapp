@@ -1,0 +1,107 @@
+/* pages/contact/contact.wxss */
+.container {
+  padding: 40rpx;
+  background-color: #F3F4F6;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 40rpx 0;
+}
+
+.page-title {
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #1E40AF;
+  display: block;
+  margin-bottom: 16rpx;
+}
+
+.page-desc {
+  font-size: 26rpx;
+  color: #6B7280;
+  display: block;
+}
+
+.contact-list {
+  margin-top: 30rpx;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+
+.contact-item {
+  padding: 24rpx 30rpx;
+  border-bottom: 1rpx solid #E5E7EB;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-label {
+  font-size: 24rpx;
+  color: #9CA3AF;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.contact-value-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-value {
+  font-size: 28rpx;
+  color: #374151;
+}
+
+.copy-btn {
+  font-size: 24rpx;
+  color: #3B82F6;
+  padding: 8rpx 20rpx;
+  border: 1rpx solid #3B82F6;
+  border-radius: 8rpx;
+}
+
+.qrcode-section {
+  margin-top: 40rpx;
+  text-align: center;
+}
+
+.qrcode-tip {
+  font-size: 24rpx;
+  color: #6B7280;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.qrcode-placeholder {
+  width: 300rpx;
+  height: 300rpx;
+  margin: 0 auto;
+  background-color: #E5E7EB;
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-text {
+  font-size: 24rpx;
+  color: #9CA3AF;
+}
+
+.actions {
+  margin-top: 40rpx;
+  padding: 0 20rpx;
+}
+
+.btn-back {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  border-radius: 12rpx;
+  font-size: 30rpx;
+}
