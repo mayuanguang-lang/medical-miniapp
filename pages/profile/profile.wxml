@@ -1,0 +1,26 @@
+<!--pages/profile/profile.wxml-->
+<view class="container">
+  <view class="header">
+    <image class="avatar" src="{{userInfo.avatar}}" mode="aspectFill"></image>
+    <text class="name">{{userInfo.name}}</text>
+    <text class="role">{{userInfo.role}}</text>
+  </view>
+
+  <view class="stats-bar">
+    <view class="stat"><text class="stat-num">{{stats.follow}}</text><text class="stat-lbl">关注</text></view>
+    <view class="stat-divider"></view>
+    <view class="stat"><text class="stat-num">{{stats.favorite}}</text><text class="stat-lbl">收藏</text></view>
+    <view class="stat-divider"></view>
+    <view class="stat"><text class="stat-num">{{stats.learn}}</text><text class="stat-lbl">学习</text></view>
+  </view>
+
+  <view class="menu-group" wx:for="{{menuGroups}}" wx:key="index">
+    <view class="menu-row" wx:for="{{item}}" wx:key="label" data-label="{{item.label}}" bindtap="onMenuTap">
+      <text class="m-icon">{{item.icon}}</text>
+      <text class="m-label">{{item.label}}</text>
+      <text class="m-arrow">›</text>
+    </view>
+  </view>
+
+  <view class="footer"><text>PiHub v1.0.0 · © 2026</text></view>
+</view>
