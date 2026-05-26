@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/picloud/picloud",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTitleText": "π镜界",
+    "navigationBarBackgroundColor": "#1E3A5F",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F7FA",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#8C9BAB",
+    "selectedColor": "#2B7DE9",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab-home.png",
+        "selectedIconPath": "images/tab-home-active.png"
+      },
+      {
+        "pagePath": "pages/picloud/picloud",
+        "text": "PiCloud",
+        "iconPath": "images/tab-cloud.png",
+        "selectedIconPath": "images/tab-cloud-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/tab-user.png",
+        "selectedIconPath": "images/tab-user-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
